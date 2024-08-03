@@ -16,7 +16,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <footer className="absolute bottom-0 text-center p-2 bg-zinc-900 text-white/50 w-full text-sm">
+          <p>&copy; 2024 Marco. All rights reserved.</p>
+        </footer>
+      </body>
     </html>
   );
 }
